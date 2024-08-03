@@ -15,7 +15,3 @@ This repository contains a web-based personal details form designed to collect u
 ### How to Use:
 1. **Clone the Repository:** Download or clone the repository to your local machine.
 2. **Open the HTML File:** Launch the `index.html` file in a web browser to view and interact with the form.
-
-```bash
-git clone https://github.com/yourusername/personal-details-form.git
-cd personal-details-form
