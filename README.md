@@ -15,3 +15,12 @@ This repository contains a web-based personal details form designed to collect u
 ### How to Use:
 1. **Clone the Repository:** Download or clone the repository to your local machine.
 2. **Open the HTML File:** Launch the `index.html` file in a web browser to view and interact with the form.
+
+
+### Here is a screenshot of the form’s output:
+![Screenshot 2024-08-03 163652](https://github.com/user-attachments/assets/3c58a009-fe85-4e4a-b79d-8d969c0839f1)
+
+
+```bash
+git clone https://github.com/Allminfatima/personal-details-form.git
+cd personal-details-form
