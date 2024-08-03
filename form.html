@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Personal Details Form</h1>
+    </header>
+
+    <div class="container">
+        <form id="details-form">
+            <fieldset>
+                <legend>Exam Form</legend>
+
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br><br>
+
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br><br>
+
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="transgender" name="gender" value="transgender">
+                    <label for="transgender">Transgender</label>
+                </div><br><br>
+
+                <label for="course">Choose Your Course:</label>
+                <select id="course" name="course" required>
+                    <option value="B.C.A">B.C.A</option>
+                    <option value="B.A">B.A</option>
+                    <option value="B.COM">B.COM</option>
+                    <option value="B.PHARM">B.PHARM</option>
+                    <option value="B.TECH" selected>B.TECH</option>
+                    <option value="B.ed">B.ed</option>
+                    <option value="B.S.C">B.S.C</option>
+                    <option value="B.A LLB">B.A LLB</option>
+                </select><br><br>
+
+                <label for="year">Choose Your Year:</label>
+                <input list="year" name="year" required>
+                <datalist id="year">
+                    <option value="1st year">
+                    <option value="2nd year">
+                    <option value="3rd year">
+                    <option value="4th year">
+                    <option value="5th year">
+                </datalist><br><br>
+
+                <label for="dateminmax">Birthdate:</label>
+                <input type="date" id="dateminmax" name="dateminmax" min="2000-01-01" max="2023-12-31" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="phone">Phone number:</label>
+                <input type="text" id="phone" name="phone" placeholder="1234-5678-90" pattern="[0-9]{4}-[0-9]{4}-[0-9]{2}" required>
+                <small>Format: 1234-5678-90</small><br><br>
+
+                <label for="myfile">Upload your current marksheet:</label>
+                <input type="file" id="myfile" name="myfile" required><br><br>
+
+                <label for="message">Why do you want to apply for this post?</label>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Your answer..."></textarea><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
